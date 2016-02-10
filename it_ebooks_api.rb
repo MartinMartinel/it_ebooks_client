@@ -3,6 +3,7 @@ require "uri"
 
 module Itebooks
   class Book
+    # include HTTParty module so I can use its methods without referring to the HTTParty namespace all the time
     include HTTParty
 
     base_uri 'http://it-ebooks-api.info/v1/'
